@@ -8,17 +8,12 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class, 'store']);
 
-Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
-Route::get('/register',[RegisterController ::class,'index'])->name('register');
-Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/posts', function () {return view('posts.index');});
 Route::get('/custom', function () {return view('details.custom');});
-
-
-
+Route::get('/navigation', function () {return view('layouts.navigation');});
+Route::get('/home', function () {return view('home.home');});
+Route::get('/product', function () {return view('details.productDetails');});
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +32,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
