@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
     <title>Customize your own</title>
      <style>
 
@@ -107,11 +105,7 @@
                         padding-left: 40px;
                         }
                       </style>
-                      {{-- <label for="tshirt-design">T-Shirt Logo:</label>
-                      <select id="tshirt-design" class="bg-green-300  font-semibold p-2 rounded  inline-flex items-center">
-                          <option class="bg-gray-200 hover:bg-gray-600  " value="">Select One of Our Logo</option>
-                          <option class="bg-gray-200 hover:bg-gray-600  " value="./batman.png">option</option>
-                      </select> --}}
+
 
 
                         <select name="avatar-select" id="tshirt-design" class="absolute left-[830px] top-[59%] block appearance-none w-96 bg-blue-200 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow-md leading-tight focus:outline-none focus:shadow-outline-blue">
