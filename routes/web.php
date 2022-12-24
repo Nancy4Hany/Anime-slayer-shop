@@ -10,6 +10,7 @@ use App\Http\Controllers\CustomizedProductController;
 
 
 
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/posts', function () {return view('posts.index');});
@@ -17,8 +18,11 @@ Route::get('/custom', function () {return view('details.custom');});
 Route::get('/navigation', function () {return view('layouts.navigation');});
 Route::get('/home', function () {return view('home.home');});
 Route::get('/product', function () {return view('details.productDetails');});
-Route::post('customized-product/save', 'CustomizedProductController@save')->name('customized-product.save');
+Route::get('customized-product/save','App\Http\Controllers\CustomizedProductController@save');
 // routes/web.php
+
+Route::post('customized-product/save', 'CustomizedProductController@save')->name('customized-product.save');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -45,5 +49,20 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Route::group(['middleware' => ['auth','isAdmin']], function () {
+
+//     Route::get('/dashboard', function () {
+//        return view('admin.dashboard');
+//     });
+
+//  });
+
+ Route::middleware(['auth','isAdmin'])->group(function(){
+    Route::get('/dashboard', function () {
+         return view('admin.index');
+        //  return "this is admin";
+     });
+ });
 
 require __DIR__.'/auth.php';
