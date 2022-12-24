@@ -6,6 +6,9 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CustomizedProductController;
+
+
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -14,6 +17,9 @@ Route::get('/custom', function () {return view('details.custom');});
 Route::get('/navigation', function () {return view('layouts.navigation');});
 Route::get('/home', function () {return view('home.home');});
 Route::get('/product', function () {return view('details.productDetails');});
+Route::post('customized-product/save', 'CustomizedProductController@save')->name('customized-product.save');
+// routes/web.php
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

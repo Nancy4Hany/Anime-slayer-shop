@@ -304,7 +304,44 @@
                 document.getElementById("tshirt-backgroundpicture3").style.display="none";
                 document.getElementById("tshirt-backgroundpicture4").style.display="block";
             }
+            var mergedImageData = canvas.toDataURL('image/jpeg');
+            // Send the merged image data to the server using an AJAX request
+            var url = '{{ route('customized-product.save') }}';
+
+            // Send the merged image data to the server using an AJAX request
+            $.ajax({
+            url: url,
+            type: 'POST',
+            data: {
+                imageData: mergedImageData
+            },
+            success: function(response) {
+                console.log('Customized product saved successfully');
+            }
+            });
     </script>
+<pre>{{ var_dump($customizedProducts) }}</pre>
+<table>
+    <thead>
+      <tr>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach($customizedProducts as $customizedProduct)
+        <tr>
+          <td>
+            <img src="{{ $customizedProduct->image_data }}" alt="Customized product image">
+          </td>
+        </tr>
+      @endforeach
+    </tbody>
+  </table>
+  {{-- <form action="/customized-product/save" method="post">
+    {{ csrf_field() }}
+    <input type="hidden" name="imageData" value="{{ $imageData }}">
+    <button type="submit">Save customized product</button>
+  </form> --}}
   </body>
 </html>
 
