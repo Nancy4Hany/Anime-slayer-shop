@@ -328,7 +328,7 @@
       </tr>
     </thead>
     <tbody>
-      @foreach($customizedProducts as $customizedProduct)
+      @foreach($customizedProduct as $customizedProduct )
         <tr>
           <td>
             <img src="{{ $customizedProduct->image_data }}" alt="Customized product image">
