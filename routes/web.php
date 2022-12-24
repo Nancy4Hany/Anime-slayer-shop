@@ -60,3 +60,6 @@ Route::get('/profile', function() {
     return view('profile');
 }) ->name('profile');
 
+Route::get('/HomePage', function() {
+    return view('HomePage');
+}) ->name('HomePage');
