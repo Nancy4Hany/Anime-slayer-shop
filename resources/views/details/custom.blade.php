@@ -1,5 +1,19 @@
 {{-- @extends('layouts.app') --}}
+<<<<<<< HEAD
 @extends('layouts.oldApp')
+=======
+@php
+   use App\Http\Controllers\CustomizedProductController;
+@endphp
+
+
+<!-- HTML and Blade template code goes here -->
+
+
+
+<x-app-layout>
+
+>>>>>>> 363d7a43aad1125b6248a1e18df340992e78e483
 <!doctype html>
 <html lang="en">
   <head>
@@ -305,6 +319,19 @@
                 document.getElementById("tshirt-backgroundpicture4").style.display="block";
             }
     </script>
+<<<<<<< HEAD
+=======
+{{-- <form action="{{ route('customized-product/save') }}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form> --}}
+
+  {{-- <form action="/customized-product/save" method="post">
+    {{ csrf_field() }}
+    <input type="hidden" name="imageData" value="{{ $imageData }}">
+    <button type="submit">Save customized product</button>
+  </form> --}}
+>>>>>>> 363d7a43aad1125b6248a1e18df340992e78e483
   </body>
 </html>
 
