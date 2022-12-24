@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\View\Components\CartComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,16 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/cart', function() {
+    return view('cart');
+}) ->name('cart');
+
+Route::get('/order-history', function() {
+    return view('order-history');
+}) ->name('order-history');
+
+Route::get('/profile', function() {
+    return view('profile');
+}) ->name('profile');
+
