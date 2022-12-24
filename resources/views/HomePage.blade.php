@@ -88,7 +88,9 @@
                     Anime differs from other forms of animation by its art styles
                 </h3>
                 <p class="text-darkGrayishBlue ">
-                    he body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. 
+                    he body proportions of human anime characters
+                     tend to accurately reflect the proportions 
+                     of the human body in reality. 
                 </p>
               </div>
              </div>
@@ -110,7 +112,9 @@
                      Anime differs from other forms of animation by its art styles
                  </h3>
                  <p class="text-darkGrayishBlue ">
-                     he body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. 
+                     he body proportions of human
+                      anime characters tend to accurately
+                       reflect the proportions of the human body in reality. 
                  </p>
                </div>
               </div>
@@ -132,7 +136,9 @@
                      Anime differs from other forms of animation by its art styles
                  </h3>
                  <p class="text-darkGrayishBlue ">
-                     he body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. 
+                     he body proportions of human anime characters tend to
+                      accurately reflect the proportions 
+                      of the human body in reality. 
                  </p>
                </div>
               </div>
@@ -151,9 +157,67 @@
             <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
               {{-- Card 1 --}}
               <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-               <img src="/img/trending1.png" class="w-23 -mt-14" alt="shoes trending">
+               <img src="/img/trending1.png" class="w-32 -mt-14" alt="shoes trending">
+               <h5 class="text-lg font-bold">Shoes Anime</h5>
+               <p class="text-sm text-darkGrayieshBlue text-left">
+                A common anime character design convention is exaggerated eye size. 
+                The animation of characters with large eyes
+                 in anime can be traced back 
+                 to Osamu Tezuka, who was deeply 
+                influenced by such early animation characters
+                 as Betty Boop, who was drawn with disproportionately
+                  large eyes.
+               </p>
             </div>
+             {{-- Card 2 --}}
+             <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                <img src="/img/trending2.png" class="w-32 -mt-14" alt="tshirt trending">
+                <h5 class="text-lg font-bold">T-shirt Anime</h5>
+                <p class="text-sm text-darkGrayieshBlue text-left">
+                 A common anime character design convention is exaggerated eye size. 
+                 The animation of characters with large eyes
+                  in anime can be traced back 
+                  to Osamu Tezuka, who was deeply 
+                 influenced by such early animation characters
+                  as Betty Boop, who was drawn with disproportionately
+                   large eyes.
+                </p>
+             </div>
+             {{-- Card 3 --}}
+             <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                <img src="/img/trending3.png" class="w-32 -mt-14" alt="tshirt trending">
+                <h5 class="text-lg font-bold">Bag Anime</h5>
+                <p class="text-sm text-darkGrayieshBlue text-left">
+                    Hair in anime is often unnaturally lively and colorful
+                    or uniquely styled. The movement of hair in anime is
+                    exaggerated and "hair action" is used to emphasize
+                    the action and emotions of
+                    characters for added visual effect.
+                </p>
+             </div>
             </div>
+            {{-- Button --}}
+            <div class="my-16">
+                <a href="#"
+                class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
+                See More</a>
+            </div>
+        </div>
+    </section>
+    {{-- CTA Section --}}
+    <section class="bg-brightRed" id="CTA">
+        {{-- Flex Container --}}
+        <div class="container flex flex-col items-center justify-between px-6 py-24 ax-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+         {{-- Heading --}}
+         <h2 class="text-5xl font-bold leading-tight text-center text-white md:max-w-xl md:text-left">
+            Customize Your Product!
+         </h2>
+         {{-- Button --}}
+         <div>
+         <a href="#"
+                class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full baseline hover:bg-gray-900 shadow-2xl">
+                Go To Products</a>
+         </div>
         </div>
     </section>
 </body>
