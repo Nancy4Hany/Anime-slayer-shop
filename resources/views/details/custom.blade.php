@@ -1,4 +1,13 @@
 {{-- @extends('layouts.app') --}}
+@php
+   use App\Http\Controllers\CustomizedProductController;
+@endphp
+
+
+<!-- HTML and Blade template code goes here -->
+
+
+
 <x-app-layout>
 
 <!doctype html>
@@ -321,23 +330,11 @@
             }
             });
     </script>
-<pre>{{ var_dump($customizedProducts) }}</pre>
-<table>
-    <thead>
-      <tr>
-        <th>Image</th>
-      </tr>
-    </thead>
-    <tbody>
-      @foreach($customizedProducts as $customizedProduct)
-        <tr>
-          <td>
-            <img src="{{ $customizedProduct->image_data }}" alt="Customized product image">
-          </td>
-        </tr>
-      @endforeach
-    </tbody>
-  </table>
+{{-- <form action="{{ route('customized-product/save') }}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form> --}}
+
   {{-- <form action="/customized-product/save" method="post">
     {{ csrf_field() }}
     <input type="hidden" name="imageData" value="{{ $imageData }}">
