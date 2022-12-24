@@ -59,17 +59,17 @@
     <section id="featuers">
         <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
            {{-- What's Different --}}
-            <div class="flex flex-col space-y-12 md:1/2">
+        <div class="flex flex-col space-y-12 md:1/2">
            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
             What's Different About Anime Slayer?
            </h2>
            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
             Animation in Japan began in the early 20th century, when filmmakers started to experiment with techniques pioneered in France, Germany, the United States, and Russia.
            </p>
-         </div>
+        </div>
          
           {{-- Number List --}}
-         <div class="flex flex-col space-y-8 md:w1/2">
+        <div class="flex flex-col space-y-8 md:w1/2">
              {{-- Item 1 --}}
              <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
                {{-- Heading of items --}}
@@ -88,7 +88,9 @@
                     Anime differs from other forms of animation by its art styles
                 </h3>
                 <p class="text-darkGrayishBlue ">
-                    he body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. 
+                    he body proportions of human anime characters
+                     tend to accurately reflect the proportions 
+                     of the human body in reality. 
                 </p>
               </div>
              </div>
@@ -110,7 +112,9 @@
                      Anime differs from other forms of animation by its art styles
                  </h3>
                  <p class="text-darkGrayishBlue ">
-                     he body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. 
+                     he body proportions of human
+                      anime characters tend to accurately
+                       reflect the proportions of the human body in reality. 
                  </p>
                </div>
               </div>
@@ -132,7 +136,9 @@
                      Anime differs from other forms of animation by its art styles
                  </h3>
                  <p class="text-darkGrayishBlue ">
-                     he body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. 
+                     he body proportions of human anime characters tend to
+                      accurately reflect the proportions 
+                      of the human body in reality. 
                  </p>
                </div>
               </div>
@@ -151,10 +157,126 @@
             <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
               {{-- Card 1 --}}
               <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-               <img src="/img/trending1.png" class="w-23 -mt-14" alt="shoes trending">
+               <img src="/img/trending1.png" class="w-32 -mt-14" alt="shoes trending">
+               <h5 class="text-lg font-bold">Shoes Anime</h5>
+               <p class="text-sm text-darkGrayieshBlue text-left">
+                A common anime character design convention is exaggerated eye size. 
+                The animation of characters with large eyes
+                 in anime can be traced back 
+                 to Osamu Tezuka, who was deeply 
+                influenced by such early animation characters
+                 as Betty Boop, who was drawn with disproportionately
+                  large eyes.
+               </p>
             </div>
+             {{-- Card 2 --}}
+             <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                <img src="/img/trending2.png" class="w-32 -mt-14" alt="tshirt trending">
+                <h5 class="text-lg font-bold">T-shirt Anime</h5>
+                <p class="text-sm text-darkGrayieshBlue text-left">
+                 A common anime character design convention is exaggerated eye size. 
+                 The animation of characters with large eyes
+                  in anime can be traced back 
+                  to Osamu Tezuka, who was deeply 
+                 influenced by such early animation characters
+                  as Betty Boop, who was drawn with disproportionately
+                   large eyes.
+                </p>
+             </div>
+             {{-- Card 3 --}}
+             <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                <img src="/img/trending3.png" class="w-32 -mt-14" alt="tshirt trending">
+                <h5 class="text-lg font-bold">Bag Anime</h5>
+                <p class="text-sm text-darkGrayieshBlue text-left">
+                    Hair in anime is often unnaturally lively and colorful
+                    or uniquely styled. The movement of hair in anime is
+                    exaggerated and "hair action" is used to emphasize
+                    the action and emotions of
+                    characters for added visual effect.
+                </p>
+             </div>
+            </div>
+            {{-- Button --}}
+            <div class="my-16">
+                <a href="#"
+                class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
+                See More</a>
             </div>
         </div>
     </section>
+    {{-- CTA Section --}}
+    <section class="bg-brightRed" id="CTA">
+        {{-- Flex Container --}}
+        <div class="container flex flex-col items-center justify-between px-6 py-24 ax-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+         {{-- Heading --}}
+         <h2 class="text-5xl font-bold leading-tight text-center text-white md:max-w-xl md:text-left">
+            Customize Your Product!
+         </h2>
+         {{-- Button --}}
+         <div>
+         <a href="#"
+                class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full baseline hover:bg-gray-900 shadow-2xl">
+                Go To Products</a>
+         </div>
+        </div>
+    </section>
+    {{-- Footer --}}
+    <footer class="bg-veryDarkBlue">
+       {{-- Flex Container --}}
+       <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+        {{-- Logo and social links container  --}}
+        <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+          {{-- Logo --}}
+          <div>
+             <img src="/img/logowhite (1).png" alt="logo" class="h-8">
+          </div>
+          {{-- Social Links Container --}}
+          <div class="flex justify-center space-x-4">
+             {{-- link 1 --}}
+             <a href="#"> 
+                <img src="/img/instagram.png" alt="facebook" class="h-8">
+             </a>
+             {{-- link 2 --}}
+             <a href="#"> 
+                <img src="/img/pinterest.png" alt="facebook" class="h-8">
+             </a>
+             {{-- link 3 --}}
+             <a href="#"> 
+                <img src="/img/facebook.png" alt="facebook" class="h-8">
+             </a>
+             {{-- link 4 --}}
+             <a href="#"> 
+                <img src="/img/twitter.png" alt="facebook" class="h-8">
+             </a>
+          </div>
+        </div>
+        {{-- List Container --}}
+        <div class="flex justify-round space-x-32 ">
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed">Home</a>
+              <a href="#" class="hover:text-brightRed">Pricing</a>
+              <a href="#" class="hover:text-brightRed">Products</a>
+              <a href="#" class="hover:text-brightRed">About Us</a>
+            </div>
+            <div class="flex flex-col space-y-3 text-white">
+                <a href="#" class="hover:text-brightRed">Trending</a>
+                <a href="#" class="hover:text-brightRed">Community</a>
+                <a href="#" class="hover:text-brightRed">Our Deals</a>
+              </div>
+        </div>
+        {{-- Input Container --}}
+        <div class="flex flex-col justify-between">
+        <form>
+            <div class="flex space-x-3" >
+            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
+            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                Go
+            </button>    
+        </div>
+            
+        </form>
+        </div>
+       </div>
+    </footer>
 </body>
 </html>
