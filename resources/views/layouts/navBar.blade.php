@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="/img/blacklogo (1).png">
     @vite('resources/css/app.css')
-    <title>Posty</title>
+    <title>Anime Slayer</title>
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
@@ -24,7 +25,7 @@
        <div class="hidden md:flex space-x-10">
           <a href="{{route('home')}}" class="hover:text-darkGrayishBlue">Home</a>
           <a href="{{route('home')}}#categories" class="hover:text-darkGrayishBlue">Categories</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#about-us" class="hover:text-darkGrayishBlue">About Us</a>
           <a href="#footer" class="hover:text-darkGrayishBlue">Contact Us</a>
     @auth
           <a href="{{route('cart')}}" class="hover:text-darkGrayishBlue">Cart</a>

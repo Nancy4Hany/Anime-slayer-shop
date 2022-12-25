@@ -173,6 +173,26 @@
                 See More</a>
             </div>
         </div>
+        <section id="about-us">
+          {{-- Container --}}
+          <div class="max-w-12xl mx-auto mt-32 text-center">
+             {{-- Heading --}}
+              <h2 class="text-4xl font-bold text-center">
+                 About Us
+              </h2>
+              {{-- about us Container --}}
+              <div class="flex w-full  mt-20 mb-24 md:flex-row md:space-x-6">
+                {{-- Card 1 --}}
+                <div class=" items-center flex-col flex p-12 m-auto space-y-12 rounded-lg bg-veryLightGray md:w-1/3">
+                 <img src="/img/anime_boyz.jpg" class="w-43 -mt-20" alt="shoes trending">
+                 <h5 class="text-lg font-bold">Anime Slayer</h5>
+                 <p class="text-lg text-darkGrayieshBlue text-left">
+                  A store called Anime Slayer offers anime-related cover cases, t-shirts, accessories, bags, and shoes.
+                  Any changes you make to your own design are welcome!
+                 </p> 
+                 
+              </div>
+            </section>
     </section>
     {{-- CTA Section --}}
     <section class="bg-brightRed" id="CTA">
