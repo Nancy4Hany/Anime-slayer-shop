@@ -1,7 +1,11 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CustomizedProductController;
 
 
@@ -35,9 +39,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -45,9 +50,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/product', function () {
-    return view('details.productDetails');
-});
 // Route::group(['middleware' => ['auth','isAdmin']], function () {
 
 //     Route::get('/dashboard', function () {
@@ -65,7 +67,18 @@ Route::get('/product', function () {
 
 require __DIR__.'/auth.php';
 
+Route::get('/cart', function() {
+    return view('cart');
+}) ->name('cart');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+Route::get('/order-history', function() {
+    return view('order-history');
+}) ->name('order-history');
+
+Route::get('/profile', function() {
+    return view('profile');
+}) ->name('profile');
+
+Route::get('/HomePage', function() {
+    return view('HomePage');
+}) ->name('HomePage');

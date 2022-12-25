@@ -68,7 +68,7 @@
                                   <canvas id="tshirt-canvas" width="250" height="400"></canvas>
                               </div>
                           </div>
-                          <div class="absolute mb-4 font-semibold top-[10%] text-gray-900 dark:text-white left-[810px]">Color</div>
+                          <div class="absolute mb-4 font-semibold top-[10%] text-gray-900 left-[810px]">Color</div>
                           <div class=" absolute left-[790px] top-[18%] md:w-2/3 ">
                           <center>
                             <button type="button" class="shadow-sm bg-white hover:bg-gray-700  py-2 px-4 rounded" onclick="function0()"></button>
@@ -125,10 +125,10 @@
                       {{-- <label for="tshirt-custompicture">Upload Your Own Design:</label>
                       <input type="file" id="tshirt-custompicture" placeholder=""/> --}}
                   </div><div class="flex items-center justify-center w-96 ">
-                    <label for="tshirt-custompicture" for="dropzone-file" class="absolute left-[830px] top-[78%] h-28 flex flex-col items-center justify-center w-96  border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <label for="tshirt-custompicture" for="dropzone-file" class="absolute left-[830px] top-[78%] h-28 flex flex-col items-center justify-center w-96  border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
                         <div class="flex flex-col items-center justify-center pt-5 pb-6">
                             <svg aria-hidden="true" class="w-8 h-8 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                            <p class="mb-2 text-sm text-gray-500"><span class="font-semibold">Click to upload</span> or drag and drop</p>
 
                         </div>
                         <input id="tshirt-custompicture" id="dropzone-file"  type="file" class="hidden" />
@@ -140,43 +140,43 @@
                   <div class="md:w-1/3  left-2/3" >
 
 
-<h3 class="absolute mb-4 font-semibold top-[31%] text-gray-900 dark:text-white left-[830px]">Size</h3>
-<ul class=" absolute left-[830px] top-[35%] items-center w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+<h3 class="absolute mb-4 font-semibold top-[31%] text-gray-900 left-[830px]">Size</h3>
+<ul class=" absolute left-[830px] top-[35%] items-center w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex">
+    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
         <div class="flex items-center pl-3">
-            <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-            <label for="vue-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">S</label>
+            <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+            <label for="vue-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">S</label>
         </div>
     </li>
-    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
         <div class="flex items-center pl-3">
-            <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-            <label for="react-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">M</label>
+            <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+            <label for="react-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">M</label>
         </div>
     </li>
-    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
         <div class="flex items-center pl-3">
-            <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-            <label for="angular-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">L</label>
+            <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+            <label for="angular-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">L</label>
         </div>
     </li>
-    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+    <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
         <div class="flex items-center pl-3">
-            <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-            <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">XL</label>
+            <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+            <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">XL</label>
         </div>
     </li>
-    <li class="w-24 dark:border-gray-600">
+    <li class="w-24">
         <div class="flex items-center pl-3">
-            <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-            <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">XXL</label>
+            <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+            <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">XXL</label>
         </div>
     </li>
 </ul>
 
                           </div>
                           <div class="col-md-6">
-                            <p class="absolute mb-4 font-semibold top-[45%] text-gray-900 dark:text-white left-[830px]">Quantity</p>
+                            <p class="absolute mb-4 font-semibold top-[45%] text-gray-900 left-[830px]">Quantity</p>
                            <input  class="absolute top-[50%] left-[830px]" type="number" class="form-control" id="inputPassword4" placeholder="Enter the Quantity">
                           </div>
 
