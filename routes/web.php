@@ -79,6 +79,11 @@ Route::get('/profile', function() {
     return view('profile');
 }) ->name('profile');
 
-Route::get('/HomePage', function() {
-    return view('HomePage');
-}) ->name('HomePage');
+Route::get('/Home', function() {
+    return view('Home');
+}) ->name('Home');
+
+Route::get('/Products', function() {
+    return view('Products');
+}) ->name('Products');
+
