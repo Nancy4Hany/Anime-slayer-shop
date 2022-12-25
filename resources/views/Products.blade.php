@@ -1,26 +1,12 @@
-@vite('resources/css/app.css')
- {{-- NavBar --}}
- <nav class="relative container mx-auto p-6">
-  {{-- Flex Container --}}
- <div class="flex items-center justify-between">
-  {{-- Logo --}}
-  <div class="pt-2 pl-3">
-      <img src="/img/blacklogo (1).png" alt="logo">
-  </div>
-  {{-- Menu Items --}}
- <div class="hidden md:flex space-x-10">
-    <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-    <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-    <a href="#" class="hover:text-darkGrayishBlue">Cart</a>
-    <a href="#" class="hover:text-darkGrayishBlue">Contact Us</a>
-    <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+@extends('layouts.navBar')
+
+@section('content')
+
+<div>
+   <h2 class="text-4xl font-bold text-center pt-6 pb-4 bg-gray-100">
+     Products
+ </h2>
  </div>
- {{-- Button --}}
- <a href="#"
- class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
- Sign in</a>
- </div>
-</nav>
 <section class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
       {{-- Products --}}
          {{-- Card 1 --}}
@@ -268,3 +254,5 @@
       </div>
       </div>
  </div>
+</section>
+ @endsection

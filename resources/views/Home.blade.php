@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/HP-style.css">
-    <title>Home Page</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-    {{-- NavBar --}}
-    <nav class="relative container mx-auto p-6">
-        {{-- Flex Container --}}
-       <div class="flex items-center justify-between">
-        {{-- Logo --}}
-        <div class="pt-2 pl-3">
-            <img src="/img/blacklogo (1).png" alt="logo">
-        </div>
-        {{-- Menu Items --}}
-       <div class="hidden md:flex space-x-10">
-          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Cart</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Contact Us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Categories</a>
-       </div>
-       {{-- Button --}}
-       <a href="#"
-       class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
-       Sign in</a>
-       </div>
-    </nav>
+@extends('layouts.navBar')
+
+@section('content')
     {{-- Hero Section --}}
     <section id="hero">
         {{-- Flex Container --}}
@@ -225,10 +195,10 @@
         Choose a Category
     </h2>
     </div>
-    <section class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
+    <section id="categories" class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
       {{-- Products --}}
          {{-- Card 1 --}}
-       <a href="#"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+       <a href="{{route('Products')}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
              <img src="/img/shoes.jpg" alt="shoes" class="w-full h-full object-cover"> 
              <div class="p-5  flex flex-col gap-3">
               {{-- badge --}}
@@ -277,42 +247,7 @@
          </div>
          {{-- product title --}}
          <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Phone Cases</h2>
-         {{-- Price --}}
-         {{-- <div>
-           <span class="text-xl font-bold">
-            EGP 100.00
-           </span>
-           <div class="flex items-center gap-2 mt-1 ">
-            <span class="text-sm line-through opacity-50">
-               EGP 150.00
-            </span>
-            <span class="bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white">
-              save 10%
-            </span>
-           </div>
-         </div> --}}
-
-         {{-- Product Rating --}}
-         {{-- <span class="flex items-center mt-1">
-            <img src="/img/full-star (2).png" >
-            <img src="/img/full-star (2).png" >
-            <img src="/img/full-star (2).png" >
-            <img src="/img/full-star (2).png" >
-            <img src="/img/full-star (2).png" >
-            <span class="text-xs ml-2 text-gray-500">1k rating</span>
-         </span> --}}
-         {{-- Product Action --}}
-         {{-- <div class="mt-5 flex gap-2">
-            <button class="bg-yellow-500/80 hover:bg-yellow-500/90 px-6 py-2 rounded-md text-white font-medium tracking-wider transition">
-                 Add to Cart
-            </button>
-            <button class="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
-                <img src="/img/love_icon (2).png" alt="add to wishlist" class="opacity-50">
-            </button>
-            <button class="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
-             <img src="/img/eye_icon (1).png" alt="add to wishlist" class="opacity-50">
-         </button>
-        </div> --}}
+         
         </div>
    </div></a>
     {{-- Card 5 --}}
@@ -326,103 +261,10 @@
        </div>
        {{-- product title --}}
        <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Bag</h2>
-       {{-- Price --}}
-       {{-- <div>
-         <span class="text-xl font-bold">
-          EGP 600.00
-         </span>
-         <div class="flex items-center gap-2 mt-1 ">
-          <span class="text-sm line-through opacity-50">
-             EGP 800.00
-          </span>
-          <span class="bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white">
-            save 20%
-          </span>
-         </div>
-       </div> --}}
-
-       {{-- Product Rating --}}
-       {{-- <span class="flex items-center mt-1">
-          <img src="/img/full-star (2).png" >
-          <img src="/img/full-star (2).png" >
-          <img src="/img/full-star (2).png" >
-          <img src="/img/full-star (2).png" >
-          <img src="/img/full-star (2).png" >
-          <span class="text-xs ml-2 text-gray-500">1k rating</span>
-       </span> --}}
-       {{-- Product Action --}}
-       {{-- <div class="mt-5 flex gap-2">
-          <button class="bg-yellow-500/80 hover:bg-yellow-500/90 px-6 py-2 rounded-md text-white font-medium tracking-wider transition">
-               Add to Cart
-          </button>
-          <button class="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
-              <img src="/img/love_icon (2).png" alt="add to wishlist" class="opacity-50">
-          </button>
-          <button class="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
-           <img src="/img/eye_icon (1).png" alt="add to wishlist" class="opacity-50">
-       </button>
-      </div> --}}
+       
       </div>
  </div></a>
         
  </section>
-    {{-- Footer --}}
-    <footer class="bg-veryDarkBlue">
-       {{-- Flex Container --}}
-       <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-        {{-- Logo and social links container  --}}
-        <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-          {{-- Logo --}}
-          <div>
-             <img src="/img/logowhite (1).png" alt="logo" class="h-8">
-          </div>
-          {{-- Social Links Container --}}
-          <div class="flex justify-center space-x-4">
-             {{-- link 1 --}}
-             <a href="#"> 
-                <img src="/img/instagram.png" alt="facebook" class="h-8">
-             </a>
-             {{-- link 2 --}}
-             <a href="#"> 
-                <img src="/img/pinterest.png" alt="facebook" class="h-8">
-             </a>
-             {{-- link 3 --}}
-             <a href="#"> 
-                <img src="/img/facebook.png" alt="facebook" class="h-8">
-             </a>
-             {{-- link 4 --}}
-             <a href="#"> 
-                <img src="/img/twitter.png" alt="facebook" class="h-8">
-             </a>
-          </div>
-        </div>
-        {{-- List Container --}}
-        <div class="flex justify-round space-x-32 ">
-            <div class="flex flex-col space-y-3 text-white">
-              <a href="#" class="hover:text-brightRed">Home</a>
-              <a href="#" class="hover:text-brightRed">Pricing</a>
-              <a href="#" class="hover:text-brightRed">Products</a>
-              <a href="#" class="hover:text-brightRed">About Us</a>
-            </div>
-            <div class="flex flex-col space-y-3 text-white">
-                <a href="#" class="hover:text-brightRed">Trending</a>
-                <a href="#" class="hover:text-brightRed">Community</a>
-                <a href="#" class="hover:text-brightRed">Our Deals</a>
-              </div>
-        </div>
-        {{-- Input Container --}}
-        <div class="flex flex-col justify-between">
-        <form>
-            <div class="flex space-x-3" >
-            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
-            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
-                Go
-            </button>    
-        </div>
-            
-        </form>
-        </div>
-       </div>
-    </footer>
-</body>
-</html>
+
+@endsection

@@ -16,7 +16,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::get('/posts', function () {return view('posts.index');});
 Route::get('/custom', function () {return view('details.custom');});
 Route::get('/navigation', function () {return view('layouts.navigation');});
-Route::get('/home', function () {return view('home.home');});
+//Route::get('/home', function () {return view('home.home');});
 Route::get('/product', function () {return view('details.productDetails');});
 Route::get('customized-product/save','App\Http\Controllers\CustomizedProductController@save');
 // routes/web.php
@@ -79,9 +79,9 @@ Route::get('/profile', function() {
     return view('profile');
 }) ->name('profile');
 
-Route::get('/Home', function() {
-    return view('Home');
-}) ->name('Home');
+Route::get('/home', function() {
+    return view('home');
+}) ->name('home');
 
 Route::get('/Products', function() {
     return view('Products');
