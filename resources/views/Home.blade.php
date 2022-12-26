@@ -27,7 +27,7 @@
     </section>
     {{-- Features Section --}}
     <section id="featuers">
-        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 space-x-12 md:space-y-0 md:flex-row">
            {{-- What's Different --}}
         <div class="flex flex-col space-y-12 md:1/2">
            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
@@ -49,18 +49,16 @@
                       01
                     </div>
                     <h3 class="text-base font-bold md:mb-4 md:hidden">
-                        Anime differs from other forms of animation by its art styles
+                        Anime Slayer differs from other anime store.
                     </h3>
                 </div>
               </div>
               <div>
                 <h3 class="hidden mb-4 text-lg font-bold md:block">
-                    Anime differs from other forms of animation by its art styles
+                  Anime Slayer differs from other anime store.
                 </h3>
                 <p class="text-darkGrayishBlue ">
-                    he body proportions of human anime characters
-                     tend to accurately reflect the proportions 
-                     of the human body in reality. 
+                    We offer customizition to you products. 
                 </p>
               </div>
              </div>
@@ -73,18 +71,16 @@
                        02
                      </div>
                      <h3 class="text-base font-bold md:mb-4 md:hidden">
-                         Anime differs from other forms of animation by its art styles
+                         We sell different kinds of products
                      </h3>
                  </div>
                </div>
                <div>
                  <h3 class="hidden mb-4 text-lg font-bold md:block">
-                     Anime differs from other forms of animation by its art styles
+                  We sell different kinds of products
                  </h3>
                  <p class="text-darkGrayishBlue ">
-                     he body proportions of human
-                      anime characters tend to accurately
-                       reflect the proportions of the human body in reality. 
+                     There vareity in our products such as tshirts, cover cases for mobiles
                  </p>
                </div>
               </div>
@@ -231,7 +227,7 @@
              </div>  
         </div></a>
         {{-- Card 2 --}}
-       <a href="#"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+       <a href="{{route('Products')}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
              <img src="/img/tshirts.jpg" alt="shoes" class="w-full h-full object-cover"> 
              <div class="p-5  flex flex-col gap-3">
               {{-- badge --}}
@@ -243,8 +239,8 @@
               <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">T-shirts</h2>
              </div>
         </div></a>
-         {{-- Card 4 --}}
-         <a href="#"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+         {{-- Card 3 --}}
+         <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
           <img src="/img/bracelete.jpg" alt="bracelete" class="w-full h-full object-cover"> 
           <div class="p-5  flex flex-col gap-3">
            {{-- badge --}}
@@ -257,7 +253,7 @@
           </div>
      </div></a>
       {{-- Card 4 --}}
-      <a href="#"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+      <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
         <img src="/img/covercase2.jpg" alt="covercase" class="w-full h-full object-cover"> 
         <div class="p-5  flex flex-col gap-3">
          {{-- badge --}}
@@ -271,7 +267,7 @@
         </div>
    </div></a>
     {{-- Card 5 --}}
-    <a href="#"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+    <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
       <img src="/img/bag.jpg" alt="covercase" class="w-full h-full object-cover"> 
       <div class="p-5  flex flex-col gap-3">
        {{-- badge --}}

@@ -1,18 +1,26 @@
 <?php
 
+use App\Models\Products;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CustomizedProductController;
 
 
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('order-history');
+Route::get('/Products', [ProductsController::class, 'index'])->name('Products');
 Route::get('/posts', function () {return view('posts.index');});
 Route::get('/custom', function () {return view('details.custom');});
 Route::get('/navigation', function () {return view('layouts.navigation');});
@@ -67,23 +75,23 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/cart', function() {
-    return view('cart');
-}) ->name('cart');
+// Route::get('/cart', function() {
+//     return view('cart');
+// }) ->name('cart');
 
-Route::get('/order-history', function() {
-    return view('order-history');
-}) ->name('order-history');
+// Route::get('/order-history', function() {
+//     return view('order-history');
+// }) ->name('order-history');
 
 Route::get('/profile', function() {
     return view('profile');
 }) ->name('profile');
 
-Route::get('/home', function() {
-    return view('home');
-}) ->name('home');
+// Route::get('/home', function() {
+//     return view('home');
+// }) ->name('home');
 
-Route::get('/Products', function() {
-    return view('Products');
-}) ->name('Products');
+// Route::get('/Products', function() {
+//     return view('Products');
+// }) ->name('Products');
 

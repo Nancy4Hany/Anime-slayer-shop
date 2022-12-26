@@ -25,7 +25,7 @@
        <div class="hidden md:flex space-x-10">
           <a href="{{route('home')}}" class="hover:text-darkGrayishBlue">Home</a>
           <a href="{{route('home')}}#categories" class="hover:text-darkGrayishBlue">Categories</a>
-          <a href="#about-us" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="{{route('home')}}#about-us" class="hover:text-darkGrayishBlue">About Us</a>
           <a href="#footer" class="hover:text-darkGrayishBlue">Contact Us</a>
     @auth
           <a href="{{route('cart')}}" class="hover:text-darkGrayishBlue">Cart</a>
