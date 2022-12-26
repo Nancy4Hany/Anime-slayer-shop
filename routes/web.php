@@ -14,7 +14,7 @@ use App\Http\Controllers\CustomizedProductController;
 use App\Http\Controllers\AdminController;
 
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('order-history');
@@ -66,12 +66,12 @@ Route::get('/productx', function () {
 
 //  });
 
-//  Route::middleware(['auth','isAdmin'])->group(function(){
-//     Route::get('/dashboard', function () {
-//          return view('admin.index');
-//         //  return "this is admin";
-//      })->name('dashboard');
-//  });
+ Route::middleware(['auth','isAdmin'])->group(function(){
+    Route::get('/dashboard', function () {
+         return view('admin.index');
+        //  return "this is admin";
+     })->name('dashboard');
+ });
 
 require __DIR__.'/auth.php';
 

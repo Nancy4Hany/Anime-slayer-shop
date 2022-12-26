@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class rating extends Model
 {
     use HasFactory;
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+    public function product()
+    {
+        return $this->belongsTo('App\Models\Product');
+    }
 }
+
+// rating belongs to user
+// rating belongs to product
