@@ -1,0 +1,338 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <style>
+      .profileinfo{
+    margin-top: 15px;
+    margin-left: 2%;
+    margin-bottom: 15px;
+    height: 530px;
+    width: 900px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.updatepass{
+    margin-top: 15px;
+    margin-left: 2%;
+    margin-bottom: 15px;
+    height: 430px;
+    width: 900px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+}
+.deleteaccount{
+    margin-top: 15px;
+    margin-left: 2%;
+    margin-bottom: 15px;
+    height: 230px;
+    width: 900px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+h2{
+    color: black;
+    font-family: system-ui;
+    padding-left: 25px;
+    font-style: italic;
+    padding-top: 10px;
+}
+h3{
+    color: black;
+    font-family: system-ui;
+    padding-left: 25px;
+    font-style: italic;
+}
+form{
+    padding-left: 10px;
+}
+input{
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 60%;
+    padding: 7px 0px;
+    border-color: black;
+    outline-width: 0;
+    font-weight: 600;
+}
+input .form2{
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 60%;
+    padding: 3px 0px;
+    border-color: black;
+    outline-width: 0;
+    font-weight: 600;
+}
+label {
+    
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: system-ui;
+    color: darkorange;
+    font-size: 12px;
+    font-style: italic;
+}
+label .f2{
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: system-ui;
+    color: darkorange;
+    font-size: 12px;
+    font-style: italic;
+}
+/* .send-verification{ 
+    margin-bottom: 30%;
+    padding-left: 25%;
+} */
+button {
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    font-style: inherit;
+    border-radius: 25px;
+    margin-top: 55px;
+}
+.buttonf2{
+    margin-top: 25px;
+}
+
+p{
+    color:darkgray;
+}
+.pf2{
+    color:darkgray;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    margin: 50px 10px 10px;
+}
+.header {
+    background: black;
+    border-bottom: 2px solid #eceefe;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    height: 120px;
+}
+.imgprofile{
+    height :100%;
+    size: 20px 30px;
+}
+.navbar {
+    padding-left: 50%;
+    padding-bottom: 10%;
+     
+
+}
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .navbar li {
+        color:darkorange;
+        position: relative;
+    }
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 10px 30px;
+        font-family: "Krub", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: darkorange;
+        white-space: nowrap;
+        transition: 0.3s;
+    }
+
+        .navbar a i,
+        .navbar a:focus i {
+            font-size: 12px;
+            line-height: 0;
+            margin-left: 5px;
+        }
+
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover > a {
+            color: darkorange;
+        }
+
+    .navbar .getstarted,
+    .navbar .getstarted:focus {
+        background: darkorange;
+        padding: 9px 25px;
+        margin-left: 130px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+        .navbar .getstarted:hover,
+        .navbar .getstarted:focus:hover {
+            color: #fff;
+            background: darkorange;
+        }
+
+ 
+
+
+    </style>
+  </head>
+  <header>
+  </header>
+  <body>
+    <div class="header">
+     <img class="imgprofile" src="Screenshot 2022-12-25 230133.png">
+     <nav id="navbar" class="navbar">
+      <ul>
+          <li><a class="nav-link scrollto active" href=" ">Settings</a></li>
+          <li><a class="nav-link scrollto" href=" ">Order History</a></li>
+          <li><a class="nav-link scrollto" href=" ">Transactions</a></li>
+          <li><a class="getstarted scrollto" href=" "> Logout</a></li>
+    </ul>
+     </nav>
+    </div>
+  <div class="profileinfo">
+      <section> 
+<header>
+<h2 class="">
+Profile Information
+</h2>
+
+<p class="" style="padding-left: 10px;">
+Update your account's profile information and email address.
+</p>
+</header>
+
+<form id="send-verification" method="post" action="http://127.0.0.1:8000/email/verification-notification">
+<input type="hidden" name="_token" value="SiF1B8Y7Dp2tyFZTTgNRvxnwTRxp82rPKGHKNGax">    </form>
+
+<form method="post" action="http://127.0.0.1:8000/profile" class="mt-6 space-y-6">
+<input type="hidden" name="_token" value="SiF1B8Y7Dp2tyFZTTgNRvxnwTRxp82rPKGHKNGax">        <input type="hidden" name="_method" value="patch">
+<div>
+<label class=" " for="name">
+Name
+</label>
+<input class="" id="name" name="name" type="text" value="mahmoud" required="required" autofocus="autofocus" autocomplete="name">
+      </div>
+
+<div>
+<label class="" for="email">
+Email
+</label>
+<input class=" " id="email" name="email" type="email" value="mahmoud@gmail.com" required="required" autocomplete="email">
+
+<label class="" for="address">
+  Address
+  </label>
+  <input class=" " id="address" name="adress" type="text" value="Abbas El-Akkad,Nasr City" required="required" autocomplete="address">
+       
+  <label class="" for="phone number">
+    phone number
+    </label>
+    <input class=" " id="phone number" name="phone number" type="number" value="01221340841" required="required" autocomplete="number">
+  <div>
+
+          <p class="send-verification" class="">
+            <p class=" ">
+              Your email address is unverified.
+              <a>Click here to re-send the verification email.</a> 
+          </p>
+      </p>
+
+                      </div>
+      </div>
+
+<div class=" ">
+<button type="submit" class=" ">
+Save
+</button>
+
+      </div>
+</form>
+</section>
+  </div>
+</div>
+
+
+
+
+
+<div class="updatepass">
+  <section>
+<header>
+<h2 class="text-lg font-medium text-gray-900">
+Update Password
+</h2>
+
+<p class="mt-1 text-sm text-gray-600" style="padding-left: 10px;">
+Ensure your account is using random password to stay secure.
+</p>
+</header>
+<form>
+<label class=" f2" for="curpass">
+Current Password
+</label>
+<input class=" form2 " id="pass" name="current password" type="password"  required="required"  autocomplete="current-password">
+<label class=" f2" for="pass">
+New Password
+</label >
+<input class=" form2" id="email" name=" new password" type="password"  required="required" autofocus="autofocus" autocomplete="new-password">
+<label class=" f2" for="cpass">
+  Confirm Password
+  </label>
+  <input class=" form2" id="email" name="confirm password" type="password"  required="required" autofocus="autofocus" autocomplete="confirm-password">
+  <div class="buttonf2 ">
+    <button type="submit" class="buttonf2">
+    Save
+    </button>
+    </div>
+</form>
+</div>
+</section>
+</div>
+</div>
+<div class="deleteaccount">
+  <section>
+  <h3 style="padding-left: 10px; padding-top: 10px;">
+    Delete Account
+    </h3>
+    
+    <p class="pf2" >
+   Once your account is deleted , all of its resources and data will be permanently deleted. <br>
+   Before deleting your account , please download any data or information that you wish to retain.
+    </p>
+    <button type="submit" class="buttonf3" style="background-color: red;">
+      Delete account
+      </button>
+    </section>
+</div>
+  </body>
+</html>
