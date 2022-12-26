@@ -67,7 +67,7 @@
             Animation in Japan began in the early 20th century, when filmmakers started to experiment with techniques pioneered in France, Germany, the United States, and Russia.
            </p>
         </div>
-         
+
           {{-- Number List --}}
         <div class="flex flex-col space-y-8 md:w1/2">
              {{-- Item 1 --}}
@@ -89,8 +89,8 @@
                 </h3>
                 <p class="text-darkGrayishBlue ">
                     he body proportions of human anime characters
-                     tend to accurately reflect the proportions 
-                     of the human body in reality. 
+                     tend to accurately reflect the proportions
+                     of the human body in reality.
                 </p>
               </div>
              </div>
@@ -114,7 +114,7 @@
                  <p class="text-darkGrayishBlue ">
                      he body proportions of human
                       anime characters tend to accurately
-                       reflect the proportions of the human body in reality. 
+                       reflect the proportions of the human body in reality.
                  </p>
                </div>
               </div>
@@ -137,8 +137,8 @@
                  </h3>
                  <p class="text-darkGrayishBlue ">
                      he body proportions of human anime characters tend to
-                      accurately reflect the proportions 
-                      of the human body in reality. 
+                      accurately reflect the proportions
+                      of the human body in reality.
                  </p>
                </div>
               </div>
@@ -160,10 +160,10 @@
                <img src="/img/trending1.png" class="w-32 -mt-14" alt="shoes trending">
                <h5 class="text-lg font-bold">Shoes Anime</h5>
                <p class="text-sm text-darkGrayieshBlue text-left">
-                A common anime character design convention is exaggerated eye size. 
+                A common anime character design convention is exaggerated eye size.
                 The animation of characters with large eyes
-                 in anime can be traced back 
-                 to Osamu Tezuka, who was deeply 
+                 in anime can be traced back
+                 to Osamu Tezuka, who was deeply
                 influenced by such early animation characters
                  as Betty Boop, who was drawn with disproportionately
                   large eyes.
@@ -174,10 +174,10 @@
                 <img src="/img/trending2.png" class="w-32 -mt-14" alt="tshirt trending">
                 <h5 class="text-lg font-bold">T-shirt Anime</h5>
                 <p class="text-sm text-darkGrayieshBlue text-left">
-                 A common anime character design convention is exaggerated eye size. 
+                 A common anime character design convention is exaggerated eye size.
                  The animation of characters with large eyes
-                  in anime can be traced back 
-                  to Osamu Tezuka, who was deeply 
+                  in anime can be traced back
+                  to Osamu Tezuka, who was deeply
                  influenced by such early animation characters
                   as Betty Boop, who was drawn with disproportionately
                    large eyes.
@@ -233,19 +233,19 @@
           {{-- Social Links Container --}}
           <div class="flex justify-center space-x-4">
              {{-- link 1 --}}
-             <a href="#"> 
+             <a href="#">
                 <img src="/img/instagram.png" alt="facebook" class="h-8">
              </a>
              {{-- link 2 --}}
-             <a href="#"> 
+             <a href="#">
                 <img src="/img/pinterest.png" alt="facebook" class="h-8">
              </a>
              {{-- link 3 --}}
-             <a href="#"> 
+             <a href="#">
                 <img src="/img/facebook.png" alt="facebook" class="h-8">
              </a>
              {{-- link 4 --}}
-             <a href="#"> 
+             <a href="#">
                 <img src="/img/twitter.png" alt="facebook" class="h-8">
              </a>
           </div>
@@ -271,9 +271,9 @@
             <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
             <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
                 Go
-            </button>    
+            </button>
         </div>
-            
+
         </form>
         </div>
        </div>

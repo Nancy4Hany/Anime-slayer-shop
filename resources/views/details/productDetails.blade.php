@@ -65,7 +65,7 @@
                                     <canvas id="tshirt-canvas" width="250" height="400"></canvas>
                                 </div>
                             </div>
-                            {{-- <div class="absolute mb-4 font-semibold top-[10%] text-gray-900 dark:text-white left-[810px]">Color</div>
+                            {{-- <div class="absolute mb-4 font-semibold top-[10%] text-gray-900 left-[810px]">Color</div>
                             <div class=" absolute left-[790px] top-[18%] md:w-2/3 ">
                             <center>
                               <button type="button" class="shadow-sm bg-white hover:bg-gray-700  py-2 px-4 rounded" onclick="function0()"></button>
@@ -84,47 +84,47 @@
 
                     <div class="md:w-1/3  left-2/3" >
 
-                      <h3 class="underline absolute mb-4 font-semibold top-[11%] text-gray-900 dark:text-white left-[830px]">4.9</h3>
-                      <h4 class=" absolute mb-4 font-regular top-[17%] text-gray-900 dark:text-white left-[830px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                      <h3 class="underline absolute mb-4 font-semibold top-[11%] text-gray-900 left-[830px]">4.9</h3>
+                      <h4 class=" absolute mb-4 font-regular top-[17%] text-gray-900 left-[830px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                           molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                           numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium</h4>
-  <h3 class="absolute mb-4 font-semibold top-[31%] text-gray-900 dark:text-white left-[830px]">Size</h3>
-  <ul class=" absolute left-[830px] top-[35%] items-center w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+  <h3 class="absolute mb-4 font-semibold top-[31%] text-gray-900 left-[830px]">Size</h3>
+  <ul class=" absolute left-[830px] top-[35%] items-center w-96 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex">
+      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
           <div class="flex items-center pl-3">
-              <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-              <label for="vue-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">S</label>
+              <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+              <label for="vue-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">S</label>
           </div>
       </li>
-      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
           <div class="flex items-center pl-3">
-              <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-              <label for="react-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">M</label>
+              <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+              <label for="react-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">M</label>
           </div>
       </li>
-      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
           <div class="flex items-center pl-3">
-              <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-              <label for="angular-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">L</label>
+              <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+              <label for="angular-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">L</label>
           </div>
       </li>
-      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+      <li class="w-24 border-b border-gray-200 sm:border-b-0 sm:border-r">
           <div class="flex items-center pl-3">
-              <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-              <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">XL</label>
+              <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+              <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">XL</label>
           </div>
       </li>
-      <li class="w-24 dark:border-gray-600">
+      <li class="w-24">
           <div class="flex items-center pl-3">
-              <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-              <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">XXL</label>
+              <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2">
+              <label for="laravel-checkbox-list" class="py-3 ml-2 w-full text-sm font-medium text-gray-900">XXL</label>
           </div>
       </li>
   </ul>
 
                             </div>
                             <div class="col-md-6">
-                              <p class="absolute mb-4 font-semibold top-[45%] text-gray-900 dark:text-white left-[830px]">Quantity</p>
+                              <p class="absolute mb-4 font-semibold top-[45%] text-gray-900 left-[830px]">Quantity</p>
                              <input  class="absolute top-[50%] left-[830px]" type="number" class="form-control" id="inputPassword4" placeholder="Enter the Quantity">
                             </div>
 
@@ -150,7 +150,7 @@
         border-color: blue;
       }
       </style>
-    <ul class=" absolute left-[220px] top-[76%] items-center w-96 text-sm font-medium text-gray-900 bg-white  sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+    <ul class=" absolute left-[220px] top-[76%] items-center w-96 text-sm font-medium text-gray-900 bg-white  sm:flex">
       <li class="relative inline-block mr-4">
           <label class="block w-20 h-20 rounded-lg overflow-hidden border cursor-pointer">
               <input checked type="radio" name="image" class="hidden" value="image3.jpg">

@@ -1,14 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\LogoutController;
-use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomizedProductController;
-
-
+use App\Http\Controllers\AdminController;
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -39,7 +34,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -50,6 +44,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/productx', function () {
+    return view('details.productDetails');
+});
 // Route::group(['middleware' => ['auth','isAdmin']], function () {
 
 //     Route::get('/dashboard', function () {
@@ -62,23 +59,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
          return view('admin.index');
         //  return "this is admin";
-     });
+     })->name('dashboard');
  });
 
 require __DIR__.'/auth.php';
 
-Route::get('/cart', function() {
-    return view('cart');
-}) ->name('cart');
-
-Route::get('/order-history', function() {
-    return view('order-history');
-}) ->name('order-history');
-
-Route::get('/profile', function() {
-    return view('profile');
-}) ->name('profile');
-
-Route::get('/HomePage', function() {
-    return view('HomePage');
-}) ->name('HomePage');
+Route::get('view_category', [AdminController::class, 'view_category']);
+Route::get('view_product', [AdminController::class, 'view_product']);
+Route::post('add_product', [AdminController::class, 'add_product']);
+Route::post('add_category', [AdminController::class, 'add_category']);
+Route::get('delete_category/{id}', [AdminController::class, 'delete_category']);
+// Route::group(['prefix' => 'admin'], function () {
+//     Voyager::routes();
+// });
