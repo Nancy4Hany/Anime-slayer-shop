@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/HP-style.css">
-    <title>Home Page</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-    {{-- NavBar --}}
-    <nav class="relative container mx-auto p-6">
-        {{-- Flex Container --}}
-       <div class="flex items-center justify-between">
-        {{-- Logo --}}
-        <div class="pt-2 pl-3">
-            <img src="/img/blacklogo (1).png" alt="logo">
-        </div>
-        {{-- Menu Items --}}
-       <div class="hidden md:flex space-x-10">
-          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Cart</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Contact Us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-       </div>
-       {{-- Button --}}
-       <a href="#"
-       class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
-       Sign in</a>
-       </div>
-    </nav>
+@extends('layouts.navBar')
+
+@section('content')
     {{-- Hero Section --}}
     <section id="hero">
         {{-- Flex Container --}}
@@ -57,7 +27,7 @@
     </section>
     {{-- Features Section --}}
     <section id="featuers">
-        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 space-x-12 md:space-y-0 md:flex-row">
            {{-- What's Different --}}
         <div class="flex flex-col space-y-12 md:1/2">
            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
@@ -79,18 +49,22 @@
                       01
                     </div>
                     <h3 class="text-base font-bold md:mb-4 md:hidden">
-                        Anime differs from other forms of animation by its art styles
+                        Anime Slayer differs from other anime store.
                     </h3>
                 </div>
               </div>
               <div>
                 <h3 class="hidden mb-4 text-lg font-bold md:block">
-                    Anime differs from other forms of animation by its art styles
+                  Anime Slayer differs from other anime store.
                 </h3>
                 <p class="text-darkGrayishBlue ">
+<<<<<<< HEAD:resources/views/HomePage.blade.php
                     he body proportions of human anime characters
                      tend to accurately reflect the proportions
                      of the human body in reality.
+=======
+                    We offer customizition to you products. 
+>>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
                 </p>
               </div>
              </div>
@@ -103,18 +77,22 @@
                        02
                      </div>
                      <h3 class="text-base font-bold md:mb-4 md:hidden">
-                         Anime differs from other forms of animation by its art styles
+                         We sell different kinds of products
                      </h3>
                  </div>
                </div>
                <div>
                  <h3 class="hidden mb-4 text-lg font-bold md:block">
-                     Anime differs from other forms of animation by its art styles
+                  We sell different kinds of products
                  </h3>
                  <p class="text-darkGrayishBlue ">
+<<<<<<< HEAD:resources/views/HomePage.blade.php
                      he body proportions of human
                       anime characters tend to accurately
                        reflect the proportions of the human body in reality.
+=======
+                     There vareity in our products such as tshirts, cover cases for mobiles
+>>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
                  </p>
                </div>
               </div>
@@ -203,6 +181,26 @@
                 See More</a>
             </div>
         </div>
+        <section id="about-us">
+          {{-- Container --}}
+          <div class="max-w-12xl mx-auto mt-32 text-center">
+             {{-- Heading --}}
+              <h2 class="text-4xl font-bold text-center">
+                 About Us
+              </h2>
+              {{-- about us Container --}}
+              <div class="flex w-full  mt-20 mb-24 md:flex-row md:space-x-6">
+                {{-- Card 1 --}}
+                <div class=" items-center flex-col flex p-12 m-auto space-y-12 rounded-lg bg-veryLightGray md:w-1/3">
+                 <img src="/img/anime_boyz.jpg" class="w-43 -mt-20" alt="shoes trending">
+                 <h5 class="text-lg font-bold">Anime Slayer</h5>
+                 <p class="text-lg text-darkGrayieshBlue text-left">
+                  A store called Anime Slayer offers anime-related cover cases, t-shirts, accessories, bags, and shoes.
+                  Any changes you make to your own design are welcome!
+                 </p> 
+                 
+              </div>
+            </section>
     </section>
     {{-- CTA Section --}}
     <section class="bg-brightRed" id="CTA">
@@ -220,6 +218,7 @@
          </div>
         </div>
     </section>
+<<<<<<< HEAD:resources/views/HomePage.blade.php
     {{-- Footer --}}
     <footer class="bg-veryDarkBlue">
        {{-- Flex Container --}}
@@ -262,8 +261,68 @@
                 <a href="#" class="hover:text-brightRed">Trending</a>
                 <a href="#" class="hover:text-brightRed">Community</a>
                 <a href="#" class="hover:text-brightRed">Our Deals</a>
+=======
+    <div>
+      <h2 class="text-4xl font-bold text-center pt-6 pb-4 bg-gray-100">
+        Choose a Category
+    </h2>
+    </div>
+    <section id="categories" class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
+      {{-- Products --}}
+         {{-- Card 1 --}}
+       <a href="{{route('Products')}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+             <img src="/img/shoes.jpg" alt="shoes" class="w-full h-full object-cover"> 
+             <div class="p-5  flex flex-col gap-3">
+              {{-- badge --}}
+              <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+                  <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+>>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
               </div>
+              {{-- product title --}}
+              <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Shoes</h2>
+             </div>  
+        </div></a>
+        {{-- Card 2 --}}
+       <a href="{{route('Products')}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+             <img src="/img/tshirts.jpg" alt="shoes" class="w-full h-full object-cover"> 
+             <div class="p-5  flex flex-col gap-3">
+              {{-- badge --}}
+              <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+                  <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+              </div>
+              {{-- product title --}}
+              <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">T-shirts</h2>
+             </div>
+        </div></a>
+         {{-- Card 3 --}}
+         <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+          <img src="/img/bracelete.jpg" alt="bracelete" class="w-full h-full object-cover"> 
+          <div class="p-5  flex flex-col gap-3">
+           {{-- badge --}}
+           <div class="flex items-center gap-2">
+               <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+               <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+           </div>
+           {{-- product title --}}
+           <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Accessories</h2>
+          </div>
+     </div></a>
+      {{-- Card 4 --}}
+      <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+        <img src="/img/covercase2.jpg" alt="covercase" class="w-full h-full object-cover"> 
+        <div class="p-5  flex flex-col gap-3">
+         {{-- badge --}}
+         <div class="flex items-center gap-2">
+             <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+             <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+         </div>
+         {{-- product title --}}
+         <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Phone Cases</h2>
+         
         </div>
+<<<<<<< HEAD:resources/views/HomePage.blade.php
         {{-- Input Container --}}
         <div class="flex flex-col justify-between">
         <form>
@@ -280,3 +339,24 @@
     </footer>
 </body>
 </html>
+=======
+   </div></a>
+    {{-- Card 5 --}}
+    <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+      <img src="/img/bag.jpg" alt="covercase" class="w-full h-full object-cover"> 
+      <div class="p-5  flex flex-col gap-3">
+       {{-- badge --}}
+       <div class="flex items-center gap-2">
+           <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+           <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+       </div>
+       {{-- product title --}}
+       <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Bag</h2>
+       
+      </div>
+ </div></a>
+        
+ </section>
+
+@endsection
+>>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php

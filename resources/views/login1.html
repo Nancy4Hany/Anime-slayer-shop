@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login1.css" />
+        <style>
+            .container {
+    background: #e5e9ea;
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+}
+
+body{
+    margin:0;
+    background: #e5e9ea;
+}
+.form {
+    background-image: url('naruto-shippuden-wallpapers-485.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 15px;
+    margin-left: 23%;
+    margin-bottom: 15px;
+    height: 630px;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+/* background-anime img{
+background-repeat: no-repeat;
+} */
+.l02 {
+    padding: 120px 80px;
+}
+.form-control:focus, .form-control:active {
+    background: transparent;
+}
+
+input {
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 60%;
+    padding: 17px 0px;
+    border-color: black;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+    input:focus {
+        border-color: black !important;
+    }
+
+
+
+
+label {
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: system-ui;
+    color:black;
+}
+
+span {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 0.5;
+    width:100%;
+}
+
+input:focus + span, input:not(:placeholder-shown) + span {
+    opacity: 1;
+    font-family: system-ui;
+    color: black;
+    transform: scale(0.75) translateY(-100%) translateX(-83px);
+}
+
+input:focus + span.dd, input:not(:placeholder-shown) + span.dd {
+    opacity: 1;
+    font-family: system-ui;
+    color: black;
+    transform: scale(0.75) translateY(-100%) translateX(-41px);
+}
+
+
+
+input::-webkit-input-placeholder {
+    color: #d6dfdc;
+    font-family: system-ui;
+    font-size:13px;
+}
+.green-color {
+    color: green;
+}
+
+
+
+li {
+    cursor: pointer;
+    padding: 15px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6dfdc;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+li:hover {
+    /* color: dodgerblue; */
+    padding: 15px;
+    padding-bottom: 6px;
+    /* border-bottom: 2px solid black; */
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+
+.liactive {
+        /* color: dodgerblue; */
+        padding: 15px;
+        padding-bottom: 6px;
+        /* border-bottom: 2px solid black; */
+        font-size: 13.5px;
+        font-weight: 600;
+}
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    font-style: inherit;
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-right: 250px;
+}
+button:before,
+button:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    line-height: 50px;
+    cursor: default;
+}
+
+/* --------------------------------------------------- */
+/*	Rolling button style compliments of CodDrops.com
+/* --------------------------------------------------- */
+button:after {
+    top: -100%;
+    content: attr(data-success);
+    background: #7aca7c;
+    color: #358337;
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform-origin: 0% 100%;
+    -moz-transform: rotateX(90deg);
+    -ms-transform-origin: 0% 100%;
+    -ms-transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+}
+
+button:before {
+    top: 100%;
+    background: #e96a6a;
+    color: #a33a3a;
+    content: attr(data-error);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateX(-90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+}
+
+button.submit-success {
+    background: #aaa;
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateX(-90deg) translateY(100%);
+    -moz-transform-origin: 50% 100%;
+    -moz-transform: rotateX(-90deg) translateY(100%);
+    -ms-transform-origin: 50% 100%;
+    -ms-transform: rotateX(-90deg) translateY(100%);
+    transform-origin: 50% 100%;
+    transform: rotateX(-90deg) translateY(100%);
+}
+
+button.submit-error {
+    background: #aaa;
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: rotateX(90deg) translateY(-100%);
+    -moz-transform-origin: 50% 0%;
+    -moz-transform: rotateX(90deg) translateY(-100%);
+    -ms-transform-origin: 50% 0%;
+    -ms-transform: rotateX(90deg) translateY(-100%);
+    transform-origin: 50% 0%;
+    transform: rotateX(90deg) translateY(-100%);
+}
+
+
+         </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="form" id="form" method="post">
+                <div style=" display: flex; color: #d6dfdc; font-family: system-ui;">
+                    <ul style="list-style: none; display: flex; margin: auto; padding: 0; margin-top: 10px">
+                        <li id="login" onclick="funshowlg();" class="liactive">LOGIN</li>
+            
+                        <li id="register" onclick="funshowre();"class="liactive">REGISTER</li>
+                    </ul>
+                </div>
+        <div class=" l02" id="lodv">
+            <form action="/action_page.php">
+                <label>
+                    <input type="email" id="emaillog" placeholder=" " name="email" class="validate" required="" aria-required="true">
+                    <span> <b>Email Address</b></span>
+                </label>
+                <label>
+                    <input type="password" id="passlog" placeholder=" " name="pwd" class="validate" required="" aria-required="true">
+                    <span><b>Password</b></span>
+                </label>
+                <p id="emaillogerror"></p>
+                <div style="
+                      width: 100%;
+                     text-align: center;">
+                    <button type="button" class="button" style=" margin-left: 10px;" onclick="Login()"> Login <i class="fa fa-chevron-right" style=" margin-left: 10px;"></i></button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
