@@ -106,7 +106,7 @@
                  <div class="flex flex-col justify-between">
                  <form>
                      <div class="flex space-x-3" >
-                     <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
+                     <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Send Us a Message!">
                      <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
                          Go
                      </button>    
