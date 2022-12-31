@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
+
+use App\Models\Product;
 use App\Models\Products;
+
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -12,6 +16,17 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    public function view_products()
+    {
+        $Product = Product::all();
+  
+        return view('products', compact('Product'));
+        // $Product = Product::inRandomOrder()->take(8)->get();
+
+        // return view('products')->with('Product', $Product);
+    }
     public function index()
     {
         return view('Products');

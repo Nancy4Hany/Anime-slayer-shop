@@ -18,7 +18,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('order-history');
-Route::get('/Products', [ProductsController::class, 'index'])->name('Products');
+Route::get('/Products', [ProductsController::class, 'view_products'])->name('Products');
 Route::get('/posts', function () {return view('posts.index');});
 Route::get('/custom', function () {return view('details.custom');});
 Route::get('/navigation', function () {return view('layouts.navigation');});
