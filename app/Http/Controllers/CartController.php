@@ -16,7 +16,27 @@ class CartController extends Controller
     {
         return view ('cart');
     }
+  
+    public function increaseQuantity($ID)
+    {
+        $product = Cart::get($ID);
+        $quantity = $product->quantity+1;
+        Cart::update($ID,$quantity);
+    }
 
+    public function decreaseQuantity($ID)
+    {
+        $product = Cart::get($ID);
+        $quantity = $product->quantity-1;
+        Cart::update($ID,$quantity);
+    }
+
+    public function delete_item($id)
+    {
+        $data=Cart::find($id);
+        $data->delete();
+        return redirect()->back()->with('message', 'Item deleted successfully!');
+    }
     /**
      * Show the form for creating a new resource.
      *

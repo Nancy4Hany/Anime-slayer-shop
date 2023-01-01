@@ -1,3 +1,5 @@
+@extends('layouts.navBar')
+@section('content')
 <!doctype html>
 <html>
 <head>
@@ -35,9 +37,10 @@
             				<div class="flex justify-center items-center">
             					
             					<div class="pr-8 flex ">
-            						<span class="font-semibold">-</span>
+            						<button class="font-semibold">-</button>
             						<input type="text" class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2" value="1">
-            						<span class="font-semibold">+</span>
+            						<button class="font-semibold">+</button>
+									
             					</div>
 
             					<div class="pr-8 ">
@@ -47,19 +50,13 @@
             					<div>
             						<i class="fa fa-close text-xs font-medium"></i>
             					</div>
-
+                                <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+								  </svg>
+								  
             				</div>
             				
             			</div>
-
-
-
-
-
-
-
-
-
             			<div class="flex justify-between items-center pt-6 mt-6 border-t">
             				<div class="flex  items-center">
             					<img src="/img/covercase.jpg" alt="covercase" width="60" class="rounded-full ">
@@ -76,9 +73,9 @@
             				<div class="flex justify-center items-center">
             					
             					<div class="pr-8 flex">
-            						<span class="font-semibold">-</span>
+            						<button class="font-semibold">-</button>
             						<input type="text" class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2" value="1">
-            						<span class="font-semibold">+</span>
+            						<button class="font-semibold">+</button>
             					</div>
 
             					<div class="pr-8">
@@ -88,7 +85,9 @@
             					<div>
             						<i class="fa fa-close text-xs font-medium"></i>
             					</div>
-
+								<svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+								  </svg>
             				</div>
             				
             			</div>
@@ -109,9 +108,9 @@
             				<div class="flex justify-center items-center">
             					
             					<div class="pr-8 flex">
-            						<span class="font-semibold">-</span>
+            						<button class="font-semibold">-</button>
             						<input type="text" class="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2" value="1">
-            						<span class="font-semibold">+</span>
+            						<button class="font-semibold">+</button>
             					</div>
 
             					<div class="pr-8">
@@ -121,9 +120,11 @@
             					<div>
             						<i class="fa fa-close text-xs font-medium"></i>
             					</div>
-
+								<button><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+								  </svg></button>
             				</div>
-            				
+            				 
             			</div>
 
 
@@ -131,7 +132,7 @@
             			<div class="flex justify-between items-center mt-6 pt-6 border-t"> 
             				<div class="flex items-center">
             					<i class="fa fa-arrow-left text-sm pr-2"></i>
-            					<span class="text-md  font-medium text-blue-500">Continue Shopping</span>
+            					<a href="{{route('Products')}}"><div class="text-md font-medium text-blue-500"> Continue Shopping </div></a>
             				</div>
 
             				<div class="flex justify-center items-end">
@@ -140,16 +141,7 @@
             					
             				</div>
             				
-            			</div>
-
-
-
-
-
-
-
-
-            			
+            			</div>       			
             		</div>
             		<div class=" p-5 bg-gray-800 rounded overflow-visible">
 
@@ -158,9 +150,6 @@
             			<span class="text-xs text-gray-400 ">Card Type</span>
 
             			<div class="overflow-visible flex justify-between items-center mt-2">
-
-            			
-
 
             				<div class="rounded w-52 h-28 bg-gray-500 py-2 px-4 relative right-10">
 
@@ -184,12 +173,6 @@
 
             					
             				</div>
-
-
-
-
-
-
             				<div class="flex justify-center  items-center flex-col">
 
             					<img src="https://img.icons8.com/color/96/000000/mastercard-logo.png" width="40" class="relative right-5" />
@@ -240,23 +223,15 @@
             				
             			</div>
 
-
-
-
                         <button class="h-12 w-full bg-blue-500 rounded focus:outline-none text-white hover:bg-blue-600 ">Pay On Delivery</button><br><br>
-
-
             			<button class="h-12 w-full bg-blue-500 rounded focus:outline-none text-white hover:bg-blue-600">Check Out</button>
 
-            		</div>
-
-            		
-            	</div>
-            	
-               
+            		</div>	
+            	</div> 
            </div>
         </div>
     </div>
     </div>
 </div>
 </div>
+@endsection
