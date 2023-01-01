@@ -39,7 +39,7 @@
         </div>
 
           {{-- Number List --}}
-        <div class="flex flex-col space-y-8 md:w1/2">
+        <div class="flex flex-col space-y-8  md:w1/2">
              {{-- Item 1 --}}
              <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
                {{-- Heading of items --}}
@@ -58,13 +58,10 @@
                   Anime Slayer differs from other anime store.
                 </h3>
                 <p class="text-darkGrayishBlue ">
-<<<<<<< HEAD:resources/views/HomePage.blade.php
                     he body proportions of human anime characters
                      tend to accurately reflect the proportions
                      of the human body in reality.
-=======
                     We offer customizition to you products. 
->>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
                 </p>
               </div>
              </div>
@@ -86,13 +83,10 @@
                   We sell different kinds of products
                  </h3>
                  <p class="text-darkGrayishBlue ">
-<<<<<<< HEAD:resources/views/HomePage.blade.php
                      he body proportions of human
                       anime characters tend to accurately
                        reflect the proportions of the human body in reality.
-=======
                      There vareity in our products such as tshirts, cover cases for mobiles
->>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
                  </p>
                </div>
               </div>
@@ -218,51 +212,8 @@
          </div>
         </div>
     </section>
-<<<<<<< HEAD:resources/views/HomePage.blade.php
     {{-- Footer --}}
-    <footer class="bg-veryDarkBlue">
-       {{-- Flex Container --}}
-       <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-        {{-- Logo and social links container  --}}
-        <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-          {{-- Logo --}}
-          <div>
-             <img src="/img/logowhite (1).png" alt="logo" class="h-8">
-          </div>
-          {{-- Social Links Container --}}
-          <div class="flex justify-center space-x-4">
-             {{-- link 1 --}}
-             <a href="#">
-                <img src="/img/instagram.png" alt="facebook" class="h-8">
-             </a>
-             {{-- link 2 --}}
-             <a href="#">
-                <img src="/img/pinterest.png" alt="facebook" class="h-8">
-             </a>
-             {{-- link 3 --}}
-             <a href="#">
-                <img src="/img/facebook.png" alt="facebook" class="h-8">
-             </a>
-             {{-- link 4 --}}
-             <a href="#">
-                <img src="/img/twitter.png" alt="facebook" class="h-8">
-             </a>
-          </div>
-        </div>
-        {{-- List Container --}}
-        <div class="flex justify-round space-x-32 ">
-            <div class="flex flex-col space-y-3 text-white">
-              <a href="#" class="hover:text-brightRed">Home</a>
-              <a href="#" class="hover:text-brightRed">Pricing</a>
-              <a href="#" class="hover:text-brightRed">Products</a>
-              <a href="#" class="hover:text-brightRed">About Us</a>
-            </div>
-            <div class="flex flex-col space-y-3 text-white">
-                <a href="#" class="hover:text-brightRed">Trending</a>
-                <a href="#" class="hover:text-brightRed">Community</a>
-                <a href="#" class="hover:text-brightRed">Our Deals</a>
-=======
-    <div>
+    
       <h2 class="text-4xl font-bold text-center pt-6 pb-4 bg-gray-100">
         Choose a Category
     </h2>
@@ -277,7 +228,6 @@
               <div class="flex items-center gap-2">
                   <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
                   <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
->>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
               </div>
               {{-- product title --}}
               <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Shoes</h2>
@@ -320,43 +270,28 @@
          </div>
          {{-- product title --}}
          <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Phone Cases</h2>
+        </div>
+      </div></a>
+      {{-- Card 5 --}}
+      <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+        <img src="/img/bag.jpg" alt="covercase" class="w-full h-full object-cover"> 
+        <div class="p-5  flex flex-col gap-3">
+         {{-- badge --}}
+         <div class="flex items-center gap-2">
+             <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+             <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+         </div>
+         {{-- product title --}}
+         <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Bag</h2>
          
         </div>
-<<<<<<< HEAD:resources/views/HomePage.blade.php
-        {{-- Input Container --}}
-        <div class="flex flex-col justify-between">
-        <form>
-            <div class="flex space-x-3" >
-            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
-            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
-                Go
-            </button>
-        </div>
+   </div></a>
+          
+   </section>
 
         </form>
         </div>
        </div>
-    </footer>
 </body>
 </html>
-=======
-   </div></a>
-    {{-- Card 5 --}}
-    <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-      <img src="/img/bag.jpg" alt="covercase" class="w-full h-full object-cover"> 
-      <div class="p-5  flex flex-col gap-3">
-       {{-- badge --}}
-       <div class="flex items-center gap-2">
-           <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
-           <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
-       </div>
-       {{-- product title --}}
-       <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Bag</h2>
-       
-      </div>
- </div></a>
-        
- </section>
-
 @endsection
->>>>>>> c25d7ba4306930fbace232e9fd68378aed6189a8:resources/views/Home.blade.php
