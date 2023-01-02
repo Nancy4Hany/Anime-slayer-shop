@@ -221,7 +221,7 @@
     <section id="categories" class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
       {{-- Products --}}
          {{-- Card 1 --}}
-       <a href="{{route('Products')}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+       <a href="{{route('Products',['category_id' => '33'])}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
              <img src="/img/shoes.jpg" alt="shoes" class="w-full h-full object-cover"> 
              <div class="p-5  flex flex-col gap-3">
               {{-- badge --}}

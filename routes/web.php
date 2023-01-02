@@ -18,7 +18,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('order-history');
-Route::get('/Products', [ProductsController::class, 'view_products'])->name('Products');
+Route::get('/Products/{category_id}', [ProductsController::class, 'view_products'])->name('Products');
 Route::get('/posts', function () {return view('posts.index');});
 Route::get('/custom', function () {return view('details.custom');});
 Route::get('/navigation', function () {return view('layouts.navigation');});
@@ -58,13 +58,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/productx', function () {
     return view('details.productDetails');
 });
-// Route::group(['middleware' => ['auth','isAdmin']], function () {
 
-//     Route::get('/dashboard', function () {
-//        return view('admin.dashboard');
-//     });
-
-//  });
 
  Route::middleware(['auth','isAdmin'])->group(function(){
     Route::get('/dashboard', function () {
@@ -80,26 +74,10 @@ Route::get('view_product', [AdminController::class, 'view_product']);
 Route::post('add_product', [AdminController::class, 'add_product']);
 Route::post('add_category', [AdminController::class, 'add_category']);
 Route::get('delete_category/{id}', [AdminController::class, 'delete_category']);
-// Route::group(['prefix' => 'admin'], function () {
-//     Voyager::routes();
-// });
-// Route::get('/cart', function() {
-//     return view('cart');
-// }) ->name('cart');
 
-// Route::get('/order-history', function() {
-//     return view('order-history');
-// }) ->name('order-history');
 
 Route::get('/profilez', function() {
     return view('profile');
 }) ->name('profile');
 
-// Route::get('/home', function() {
-//     return view('home');
-// }) ->name('home');
-
-// Route::get('/Products', function() {
-//     return view('Products');
-// }) ->name('Products');
 

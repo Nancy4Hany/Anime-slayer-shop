@@ -22,7 +22,7 @@ return new class extends Migration
             $table->unsignedBigInteger('product_id');
             $table->foreign('product_id')->references('id')->on('products')->onUpdate('cascade')->onDelete('cascade');
             $table->unsignedBigInteger('size_id');
-            $table->foreign('size_id')->references('id')->on('product_sizes')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('size_id')->references('id')->on('product_size')->onUpdate('cascade')->onDelete('cascade');
             $table->unsignedBigInteger('image_id');
             $table->foreign('image_id')->references('id')->on('product_images')->onUpdate('cascade')->onDelete('cascade');
 
