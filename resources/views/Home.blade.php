@@ -221,71 +221,27 @@
     <section id="categories" class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
       {{-- Products --}}
          {{-- Card 1 --}}
-       <a href="{{route('Products',['category_id' => '33'])}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-             <img src="/img/shoes.jpg" alt="shoes" class="w-full h-full object-cover"> 
-             <div class="p-5  flex flex-col gap-3">
-              {{-- badge --}}
-              <div class="flex items-center gap-2">
-                  <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
-                  <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
-              </div>
-              {{-- product title --}}
-              <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Shoes</h2>
-             </div>  
-        </div></a>
-        {{-- Card 2 --}}
-       <a href="{{route('Products')}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-             <img src="/img/tshirts.jpg" alt="shoes" class="w-full h-full object-cover"> 
-             <div class="p-5  flex flex-col gap-3">
-              {{-- badge --}}
-              <div class="flex items-center gap-2">
-                  <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
-                  <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
-              </div>
-              {{-- product title --}}
-              <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">T-shirts</h2>
-             </div>
-        </div></a>
-         {{-- Card 3 --}}
-         <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-          <img src="/img/bracelete.jpg" alt="bracelete" class="w-full h-full object-cover"> 
-          <div class="p-5  flex flex-col gap-3">
-           {{-- badge --}}
-           <div class="flex items-center gap-2">
-               <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
-               <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
-           </div>
-           {{-- product title --}}
-           <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Accessories</h2>
-          </div>
-     </div></a>
-      {{-- Card 4 --}}
-      <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-        <img src="/img/covercase2.jpg" alt="covercase" class="w-full h-full object-cover"> 
-        <div class="p-5  flex flex-col gap-3">
-         {{-- badge --}}
-         <div class="flex items-center gap-2">
-             <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
-             <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
-         </div>
-         {{-- product title --}}
-         <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Phone Cases</h2>
-        </div>
-      </div></a>
-      {{-- Card 5 --}}
-      <a href="{{route('Products')}}"><div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-        <img src="/img/bag.jpg" alt="covercase" class="w-full h-full object-cover"> 
-        <div class="p-5  flex flex-col gap-3">
-         {{-- badge --}}
-         <div class="flex items-center gap-2">
-             <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
-             <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
-         </div>
-         {{-- product title --}}
-         <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">Bag</h2>
-         
-        </div>
-   </div></a>
+       @foreach($categories as $category)
+        <a href="{{route('Products',['category_id'=>$category->id])}}"> <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
+          @php
+            $product = $category->products()->first();
+            $image = 'img/default-thumbnail.jpg';
+            if($product)
+              $image = $product->images()->first()->image??$image;
+          @endphp
+          <img src="{{ asset($image)}}" alt="shoes" class="w-full h-full object-cover"> 
+              <div class="p-5  flex flex-col gap-3">
+                {{-- badge --}}
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 rounded-full text-xs bg-gray-100">stock ready</span>
+                    <span  class="px-3 py-1 rounded-full text-xs bg-gray-100">offical store</span>
+                </div>
+                {{-- product title --}}
+                <h2 class="font-semibold text-2xl overfolow-ellipsis overflow-hidden whitespace-nowrap">{{ucfirst($category->category_name)}}</h2>
+              </div>  
+          </div></a>
+       @endforeach
+       
           
    </section>
 

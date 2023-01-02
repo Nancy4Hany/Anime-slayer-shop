@@ -10,11 +10,11 @@
  
 <section class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
       {{-- Products --}}
-        @foreach ($Product as $Product)
+        @foreach ($products as $Product)
    
          {{-- Card 3 --}}
          <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-          <img src="/img/bracelete.jpg" alt="bracelete" class="w-full h-full object-cover"> 
+          <img src="{{asset($Product->images()->first()->image??"img/default-thumbnail.jpg")}}" alt="bracelete" class="w-full h-full object-cover"> 
           <div class="p-5  flex flex-col gap-3">
            {{-- badge --}}
            <div class="flex items-center gap-2">
@@ -26,14 +26,14 @@
            {{-- Price --}}
            <div>
              <span class="text-xl font-bold">
-              {{$Product->price}}
+              {{$Product->discount_price}}
              </span>
              <div class="flex items-center gap-2 mt-1 ">
               <span class="text-sm line-through opacity-50">
-                 {{$Product->discount_price}}
+                 {{$Product->price}}
               </span>
               <span class="bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white">
-                save  {{ ( ($Product->discount_price/$Product->price*100)-100)  }}%
+                save  {{ ( round($Product->discount_price/$Product->price*100)-100)  }}%
               </span>
              </div>
            </div>
@@ -49,9 +49,11 @@
            </span>
            {{-- Product Action --}}
            <div class="mt-5 flex gap-2">
-              <button class="bg-yellow-500/80 hover:bg-yellow-500/90 px-6 py-2 rounded-md text-white font-medium tracking-wider transition">
+              <a href="{{route('add_to_cart',$Product->id)}}">
+                <button class="bg-yellow-500/80 hover:bg-yellow-500/90 px-6 py-2 rounded-md text-white font-medium tracking-wider transition">
                    Add to Cart
               </button>
+              </a>
               <button class="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
                   <img src="/img/love_icon (2).png" alt="add to wishlist" class="opacity-50">
               </button>

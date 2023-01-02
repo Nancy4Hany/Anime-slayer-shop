@@ -22,7 +22,8 @@ class ProductsController extends Controller
         // $Product = Product::with('category_id')->whereHas('category', function($query){
         //     $query->where('title', request()->category);
         // })->get();
-        $products = Product::with(['category'])->where('category_id', $category_id)->get();
+        $cateogry= Category::findOrFail($category_id);
+        $products = $cateogry->products()->get();
         return view('Products',compact('products','category_id'));
 
             // $Product = Product::where('category_id',$key)->get();
@@ -30,7 +31,7 @@ class ProductsController extends Controller
         // return view('products', compact('Product'));
         // $Product = Product::inRandomOrder()->take(8)->get();
 
-        // return view('products')->with('Product', $Product);
+        return view('products',['products'=>$products]);
     }
     public function showForm($category_id){
         return view('Products')->with('category_id',$category_id);
