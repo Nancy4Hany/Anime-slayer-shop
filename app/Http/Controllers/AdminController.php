@@ -5,7 +5,9 @@ use App\Models\Product;
 use App\Models\Category;
 use App\Models\ProductSize;
 use App\Models\ProductImage;
+use App\Models\Size;
 use Illuminate\Http\Request;
+use stdClass;
 
 class AdminController extends Controller
 {
@@ -30,9 +32,16 @@ class AdminController extends Controller
         return redirect()->back()->with('message', 'Category deleted successfully!');
     }
 
-    public function view_product(){
-    $category=category::all();
-    return view('admin.product', compact('category'));
+    public function view_product($id = null){
+        $category=category::all();
+        $sizes = Size::all();
+        $data= [];
+        $data['category'] = $category;
+        $data['sizes'] = $sizes;
+        if($id){
+            $data['id'] = $id;
+        }
+        return view('admin.product', $data);
 }
 // this line improves scalability and efficiency of the code as it uses eager loading
 // Eager loading allows you to load the related categories for all products in a single query,
@@ -41,32 +50,45 @@ class AdminController extends Controller
 //     rather than making a separate query for each product.
 
 public function add_product(Request $request){
-    $validatedData = $request->validate([
+    $request->validate([
         // Validation rules for the form fields
         'title' => 'required|max:255',
         'description' => 'required',
         'category_id' => 'required|integer',
         'price' => 'required|numeric',
         'discount_price' => 'nullable|numeric',
-        'image' => 'required',
+        'size' => "nullable|array",
+        "size.*" => "exists:sizes,id"
         // 'sizes' => 'required',
         // Other validation rules
      ]);
 
      // Create new product record
+     if($request->has('id')){
+         $product = Product::findOrFail($request->id);
+     }else{
+        $request->validate([
+            'image' => 'required',
+        ]);
      $product = new Product;
-     $product->title = $validatedData['title'];
-     $product->description = $validatedData['description'];
-     $product->category_id = $validatedData['category_id'];
-     $product->price = $validatedData['price'];
-     $product->discount_price = $validatedData['discount_price'];
+     }
+     $product->title = $request->title;
+     $product->description = $request->description;
+     $product->category_id = $request->category_id;
+     $product->price = $request->price;
+     $product->discount_price = $request->discount_price;
     // $product->title=$request->product;
     // $product->description=$request->product;
     // $product->category_id=$request->product;
     // $product->price=$request->product;
     // $product->discount_price=$request->product;
      $product->save();
-
+     if($request->has('id')){
+        $product->sizes()->detach();
+     }
+     foreach($request->size as $size){
+         $product->sizes()->attach($size);
+     }
      // Create new product_image record
      $productImage = new ProductImage;
      if (!empty($request->image)) {
@@ -85,6 +107,11 @@ public function add_product(Request $request){
     //  $productSize->product_id = $product->id;
     //  $productSize->save();
      return redirect()->back()->with('message', 'Product added successfully!');
+}
+
+public function retrieve_product() {
+    $products = Product::with(['category','sizes'])->get();
+    return view('admin.viewProduct',['products'=>$products]);
 }
 
 

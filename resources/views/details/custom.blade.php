@@ -41,7 +41,7 @@
         </div> --}}
 
 
-        <div class="container mx-auto sm:px-4" style="padding: 20px 5px;">
+        <div class="container mx-auto sm:px-4" style="padding: 130px 5px;">
     {{-- <body class="bg-amber-200 relative"> --}}
 
         <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mb-3" style="max-width: auto;">

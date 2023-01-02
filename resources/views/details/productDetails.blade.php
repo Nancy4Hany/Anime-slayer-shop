@@ -150,7 +150,7 @@
         border-color: blue;
       }
       </style>
-    <ul class=" absolute left-[220px] top-[76%] items-center w-96 text-sm font-medium text-gray-900 bg-white  sm:flex">
+    <ul class=" absolute left-[30px] top-[86%] items-center w-96 text-sm font-medium text-gray-900 bg-white  sm:flex">
       <li class="relative inline-block mr-4">
           <label class="block w-20 h-20 rounded-lg overflow-hidden border cursor-pointer">
               <input checked type="radio" name="image" class="hidden" value="image3.jpg">

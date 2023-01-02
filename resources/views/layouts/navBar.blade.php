@@ -32,23 +32,23 @@
     @endauth
        </div>
        {{-- Button --}}
-       
+
        <div class = "flex ">
         @auth
         <a href="#"
-        class="hidden md:block p-3 px-6 pt-2 mr-3 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
+        class="hidden md:block p-3 px-6 pt-2 mr-3 text-gray-500 bg-brightRed rounded-full baseline hover:brightRedLight">
         {{auth()->user()->name}}</a>
-        <form action = "{{route('logout')}}" method="post" class = "hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
+        <form action = "{{route('logout')}}" method="post" class = "hidden md:block p-3 px-6 pt-2 text-gray-500 bg-brightRed rounded-full baseline hover:brightRedLight">
             @csrf
         <button type="submit">Logout</button>
         </form>
         @endauth
         @guest
        <a href="{{route('login')}}"
-       class="hidden md:block p-3 px-6 pt-2 mr-3 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
+       class="hidden md:block p-3 px-6 pt-2 mr-3 text-slate-700 bg-brightRed rounded-full baseline hover:brightRedLight">
        Sign in</a>
        <a href="{{ route('register') }}"
-       class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:brightRedLight">
+       class="hidden md:block p-3 px-6 pt-2 text-slate-700 bg-brightRed rounded-full baseline hover:brightRedLight">
        Register</a>
        @endguest
        </div>
@@ -71,19 +71,19 @@
                    {{-- Social Links Container --}}
                    <div class="flex justify-center space-x-4">
                       {{-- link 1 --}}
-                      <a href="#"> 
+                      <a href="#">
                          <img src="/img/instagram.png" alt="facebook" class="h-8">
                       </a>
                       {{-- link 2 --}}
-                      <a href="#"> 
+                      <a href="#">
                          <img src="/img/pinterest.png" alt="facebook" class="h-8">
                       </a>
                       {{-- link 3 --}}
-                      <a href="#"> 
+                      <a href="#">
                          <img src="/img/facebook.png" alt="facebook" class="h-8">
                       </a>
                       {{-- link 4 --}}
-                      <a href="#"> 
+                      <a href="#">
                          <img src="/img/twitter.png" alt="facebook" class="h-8">
                       </a>
                    </div>
@@ -109,14 +109,14 @@
                      <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Send Us a Message!">
                      <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
                          Go
-                     </button>    
+                     </button>
                  </div>
-                     
+
                  </form>
                  </div>
                 </div>
              </footer>
-    
+
 </body>
 
 </html>
