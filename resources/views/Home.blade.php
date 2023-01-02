@@ -58,10 +58,7 @@
                   Anime Slayer differs from other anime store.
                 </h3>
                 <p class="text-darkGrayishBlue ">
-                    he body proportions of human anime characters
-                     tend to accurately reflect the proportions
-                     of the human body in reality.
-                    We offer customizition to you products. 
+                    We offer customization to your products.
                 </p>
               </div>
              </div>
@@ -191,8 +188,8 @@
                  <p class="text-lg text-darkGrayieshBlue text-left">
                   A store called Anime Slayer offers anime-related cover cases, t-shirts, accessories, bags, and shoes.
                   Any changes you make to your own design are welcome!
-                 </p> 
-                 
+                 </p>
+
               </div>
             </section>
     </section>
@@ -201,7 +198,7 @@
         {{-- Flex Container --}}
         <div class="container flex flex-col items-center justify-between px-6 py-24 ax-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
          {{-- Heading --}}
-         <h2 class="text-5xl font-bold leading-tight text-center text-white md:max-w-xl md:text-left">
+         <h2 class="text-5xl font-bold leading-tight text-center text-white md:max-w-xl md:text-left drop-shadow-lg shadow-black">
             Customize Your Product!
          </h2>
          {{-- Button --}}
@@ -212,8 +209,7 @@
          </div>
         </div>
     </section>
-    {{-- Footer --}}
-    
+    <div>
       <h2 class="text-4xl font-bold text-center pt-6 pb-4 bg-gray-100">
         Choose a Category
     </h2>
@@ -245,7 +241,6 @@
           
    </section>
 
-        </form>
         </div>
        </div>
 </body>

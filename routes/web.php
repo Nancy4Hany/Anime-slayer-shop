@@ -47,6 +47,9 @@ Route::post('customized-product/save', 'CustomizedProductController@save')->name
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('/cart', function () {
+//     return view('cart');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -73,7 +76,8 @@ Route::get('/productx', function () {
 require __DIR__.'/auth.php';
 
 Route::get('view_category', [AdminController::class, 'view_category']);
-Route::get('view_product', [AdminController::class, 'view_product']);
+Route::get('view_product/{id?}', [AdminController::class, 'view_product']);
+Route::get('viewProduct', [AdminController::class, 'retrieve_product']);
 Route::post('add_product', [AdminController::class, 'add_product']);
 Route::post('add_category', [AdminController::class, 'add_category']);
 Route::get('delete_category/{id}', [AdminController::class, 'delete_category']);
@@ -82,5 +86,4 @@ Route::get('delete_category/{id}', [AdminController::class, 'delete_category']);
 Route::get('/profilez', function() {
     return view('profile');
 }) ->name('profile');
-
 
