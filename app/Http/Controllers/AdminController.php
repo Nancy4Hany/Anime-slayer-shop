@@ -97,7 +97,7 @@ public function add_product(Request $request){
         $filename = time().'.' . $extension;
         $file->move(public_path('uploads/'), $filename);
     }
-     $productImage->image =  'public/uploads/'.$filename;
+     $productImage->image =  'uploads/'.$filename;
      $productImage->product_id = $product->id;
      $productImage->save();
 

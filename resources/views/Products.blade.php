@@ -7,14 +7,14 @@
      Products
  </h2>
  </div>
- 
+
 <section class="bg-gray-100  flex items-center justify-center pt-4 pb-4 space-x-3 space-y-4 flex-row">
       {{-- Products --}}
         @foreach ($products as $Product)
-   
+
          {{-- Card 3 --}}
          <div class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden">
-          <img src="{{asset($Product->images()->first()->image??"img/default-thumbnail.jpg")}}" alt="bracelete" class="w-full h-full object-cover"> 
+          <img src="{{asset($Product->images()->first()->image??"img/default-thumbnail.jpg")}}"  class="w-full h-full object-cover">
           <div class="p-5  flex flex-col gap-3">
            {{-- badge --}}
            <div class="flex items-center gap-2">
@@ -63,7 +63,7 @@
           </div>
           </div>
      </div>
- 
+
 @endforeach
 </section>
  @endsection
